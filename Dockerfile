@@ -1,5 +1,5 @@
-# Build-vaihe Node:lla
-FROM node:18-alpine AS build
+# Build-vaihe Node 20:lla
+FROM node:20-alpine AS build
 WORKDIR /app
 
 COPY package*.json ./
