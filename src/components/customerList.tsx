@@ -103,7 +103,7 @@ export default function CustomerList({ fetchTrainings }: CustomerListProps) {
 
   const header = fields.join(";");
   const csvRows = filteredCustomers.map(customer => {
-    const id = customer._links.self.href.split("/").pop(); // ottaa id numeron URL:sta
+    const id = customer._links.self.href.split("/").pop();
 
     const values = [
       id,

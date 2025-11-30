@@ -20,7 +20,7 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 
-// ✅ Custom event-komponentti
+
 function CustomEvent({ event }: { event: any }) {
   return (
     <div style={{ whiteSpace: "normal", lineHeight: "1.2" }}>
@@ -93,8 +93,8 @@ export default function CalendarPage() {
         onView={(newView) => setView(newView)}
         date={currentDate}
         onNavigate={(newDate) => setCurrentDate(newDate)}
-        components={{ event: CustomEvent }} // ✅ custom event
-        tooltipAccessor="tooltip" // ✅ näyttää täydet tiedot hoverissa
+        components={{ event: CustomEvent }} 
+        tooltipAccessor="tooltip" 
       />
     </Box>
   );

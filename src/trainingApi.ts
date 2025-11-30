@@ -27,7 +27,7 @@ export function saveTraining(newTraining: {
 export function deleteTraining(url: string) {
   return fetch(url, { method: "DELETE" }).then((response) => {
     if (!response.ok) throw new Error("Error when deleting a training " + response.statusText);
-    // palautetaan jotain, esim. true tai response.json() jos API palauttaa body
+   
     return true;
   });
 }

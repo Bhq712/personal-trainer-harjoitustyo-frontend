@@ -11,7 +11,7 @@ import {
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import CustomerList from "./components/customerList";
 import TrainingList from "./components/trainingList";
-import CalendarPage from "./components/CalendarPage"; // <-- uusi komponentti
+import CalendarPage from "./components/CalendarPage"; 
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { getTrainings } from "./trainingApi";
